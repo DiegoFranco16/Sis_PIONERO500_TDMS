@@ -4,7 +4,7 @@
 1. [Sistema de presentación de datos de Pionero500](#sistema-de-presentación-de-datos-de-pionero500)
 2. [Controles VisorTDMS](#controles-visortdms)
 3. [Archivos creados por VisorTDMS](#archivos-creados-por-visortdms)
-4. [Consideraciones finales de VisorTDMS.vi a nivel de usuario](#consideraciones-finales-de-visortdms.vi-a-nivel-de-usuario)
+4. [Consideraciones finales de VisorTDMS a nivel de usuario](#consideraciones-finales-de-visortdms.vi-a-nivel-de-usuario)
 5. [Requerimientos de software](#requerimientos-de-software)
 6. [Consideraciones de desarrollo](#consideraciones-de-desarrollo)
 7. [Lectura de video](#lectura-de-video)
