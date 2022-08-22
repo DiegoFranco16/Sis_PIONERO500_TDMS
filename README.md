@@ -92,11 +92,31 @@ Si se desea ejecutar o modificar el código fuente de VisorTDMS, es importante c
 * Tener instalado la plataforma de desarrollo LabVIEW, con el módulo de Vision and Motion
 
 ## Consideraciones de desarrollo
-Dados unos errores de codec en la segunda versión del paquete de *Vision* de LabVIEW, encontrado en la sección de Vision and Motion, para la lectura de los videos en formato AVI se usa la primera versión, que si bien no aparece en el menú del *Block Diagram*, se puede encontrar en la ruta ![image](https://user-images.githubusercontent.com/68162041/185844147-4c2fb417-dd5c-4712-ae4b-a3d21dceb0bd.png)
 
-![image](https://user-images.githubusercontent.com/68162041/185843897-d1e10624-2f1b-4ec5-be45-a766921c0921.png)
+### Lectura de video
+El paquete de *Vision* de LabVIEW permite acceder a algunos VI's para la lectura y tratamiento de videos en formato AVI.
+![image](https://user-images.githubusercontent.com/68162041/185844677-4d8343cf-615d-489c-b09b-3b88b8ca9763.png)
 
+Sin embargo, dados unos errores de codec en la segunda versión del paquete de *Vision* de LabVIEW, encontrado en la sección de Vision and Motion, para la lectura de los videos en formato AVI se usa la primera versión, que si bien no aparece en el menú del *Block Diagram*, se puede encontrar en las rutas siguientes:
+![image](https://user-images.githubusercontent.com/68162041/185844147-4c2fb417-dd5c-4712-ae4b-a3d21dceb0bd.png)
+![image](https://user-images.githubusercontent.com/68162041/185844357-ec66c88f-bcb1-4ead-af8b-d918addd6254.png)
+![image](https://user-images.githubusercontent.com/68162041/185844433-4ca7e8b6-0338-4b5d-977f-fc0310e562f8.png)
 
+###  Sincronizaciónn con archivos TDMS
+Dado que los datos de SubData y TopData fueron adquiridos de manera independiente, la parte decimal de los segundos no es igual para las mediciones adquiridas. Además, la hora inicial de video es aproximada, y su incremento de tiempo está calculado considerando los fps del archivo de video entregado por Pionero500. Por lo tanto, para poder sincronizar los frame del video con los archivos TDMS cargados, se elimina la parte decimal de los segundos.
 
+![image](https://user-images.githubusercontent.com/68162041/185850109-ab4fc7ea-2cb3-4386-991e-eb78f0f88853.png)
+![image](https://user-images.githubusercontent.com/68162041/185846012-cb381d9a-b740-4733-bb7f-6c0d6dd4e744.png)
+![image](https://user-images.githubusercontent.com/68162041/185850207-9d23cf95-accc-4726-b9ac-feda0d539114.png)
+![image](https://user-images.githubusercontent.com/68162041/185846027-90fec617-8f82-4c6c-8266-a7b797d88759.png)
+![image](https://user-images.githubusercontent.com/68162041/185846128-ad181cce-99e8-4bf4-9f35-30c206c5b22c.png)
+
+Por otra parte, el sistema está desarrollado con base en los 4 videos de Pionero500 de los cuales se sabía la hora aproximada de inicio, por lo que se precarga un valor en timestamp LabVIEW.
+* Rec-0951-220403-2.avi
+* Rec-1224-220403-9.avi
+* Rec-1421-220403-12.avi
+* Rec-1539-220403-19.avi
+
+Para videos nombrados diferente, se debe considerar: *timestamp LabVIEW* = Hora_inicio_video - Tiempo_cero_LabVIEW,  donde Tiempo_cero_LabVIEW corresponde a 7:00:00,000 p. m. 31/12/1903, dado que LabVIEW almacena la fecha/hora en relación con Greenwich, UK (Diferente a DIAdem que trabaja con tiempos absolutos). Para ayudar en este cálculo conviene usar https://www.ncei.noaa.gov/erddap/convert/time.html?n=63816111290&units=seconds+since+1903-12-31, el cual nos ofrece el *timestamp LabVIEW* necesario, o en su defecto, un valor muy aproximado que podemos ajustar sumando los segundos necesarios.
 
 
