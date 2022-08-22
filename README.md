@@ -56,6 +56,7 @@ A continuación, y en relación con los numerales de la Figura 2, se lista todo 
 **Figura 4.** Interfaz VisorTDMS.vi mientras está guardando un dato
 
 ![fig_InterfazVisorTDMS](/img/fig_InterfazTDMS_File_Viewer_TopData.png)
+
 **Figura 5.** Visualizador de archivo TDMS TopData, mediante *TDMS File Viewer* de LabVIEW
 
 ![fig_InterfazVisorTDMS](/img/fig_InterfazTDMS_File_Viewer_SubData.png)
@@ -65,8 +66,25 @@ A continuación, y en relación con los numerales de la Figura 2, se lista todo 
 ## Archivos creados por VisorTDMS.vi
 
 Luego de oprimir el botón Guardar dato, mostrado con el numeral 27 de la Figura 2, se crean los siguientes archivos y carpetas asociadas:
-•	Carpeta en el directorio raíz del programa …\Capturas\  NombreVideo\ 
-•	Dentro de la carpeta …\Capturas\  NombreVideo\ se crea el archivo  NombreVideo.xlsx, el cual corresponde al archivo Excel mostrado en la Figura 7, cuyo contenido se observa en la Figura 8.
-•	Dentro de la carpeta …\Capturas\  NombreVideo\ se guarda la imagen correspondiente al frame del video cargado, como se observa en la Figura 7.
-* hola
+* Carpeta en el directorio raíz del programa …\Capturas\NombreVideo\ 
+* Dentro de la carpeta …\Capturas\NombreVideo\ se crea el archivo  NombreVideo.xlsx, el cual corresponde al archivo Excel mostrado en la Figura 7, cuyo contenido se observa en la Figura 8.
+* Dentro de la carpeta …\Capturas\NombreVideo\ se guarda la imagen correspondiente al frame del video cargado, como se observa en la Figura 7.
+
+
+![fig_InterfazVisorTDMS](/img/fig_ContenidoNombreVideo_Folder.png)
+
+**Figura 7.** Contenido ejemplo del archivo …\Capturas\NombreVideo\NombreVideo.xlsx luego de ejecutar VisorTDMS.vi
+
+![fig_InterfazVisorTDMS](/img/fig_ContenidoNombreVideo_Excel.png)
+
+**Figura 8.** Contenido ejemplo del archivo …\Capturas\NombreVideo\NombreVideo.xlsx luego de ejecutar VisorTDMS.vi
+
+## Consideraciones finales de VisorTDMS.vi
+* Luego de generar hacer las capturas pertinentes según la necesidad del usuario, posteriormente, se puede cargar nuevamente el mismo video y continuar guardando los datos deseados. Esta acción sobre escribe el archivo  NombreVideo.xlsx generado con anterioridad sin perder su información.
+* El no cargar alguno de los 3 archivos solicitados hará que la captura de datos quede incompleta.
+* Como se muestra en el numeral 30 de la Figura 2, el archivo de video cargado debe estar en formato AVI (*.avi), además de ejecutar VisorTDMS.vi desde una ubicación no sincronizada en nube (como OneDrive, Drive, Dropbox o similares), dado que puede generar errores al momento de sobre escribir el archivo NombreVideo.xlsx generado, dado que este es usado para la sincronización de la nube en cuestión.
+
+***
+
+Algo
 
