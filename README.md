@@ -129,9 +129,10 @@ Por otra parte, el sistema está desarrollado con base en los 4 videos de Pioner
 Para videos nombrados diferente, se debe considerar: *timestamp LabVIEW* = Hora_inicio_video - Tiempo_cero_LabVIEW,  donde Tiempo_cero_LabVIEW corresponde a 7:00:00,000 p. m. 31/12/1903, dado que LabVIEW almacena la fecha/hora en relación con Greenwich, UK (Diferente a DIAdem que trabaja con tiempos absolutos). Para ayudar en este cálculo conviene usar https://www.ncei.noaa.gov/erddap/convert/time.html?n=63816111290&units=seconds+since+1903-12-31, el cual nos ofrece el *timestamp LabVIEW* necesario, o en su defecto, un valor muy aproximado que podemos ajustar sumando los segundos necesarios.
 
 ### Proceso guardado de datos
-Para guardas los datos de los diferentes indicadores mostrados en la interfaz de VisorTDMS, con ayuda 
+Para guardas los datos de los diferentes indicadores mostrados en la interfaz de VisorTDMS, se crea la carpeta correspondiente con ayuda de __CeacionArchivos.vi 
 
 
 ### Visualización archivos TDMS
-El archivo completo SUbData y TopData son leidos mediante TDMS File Viewer, un Vi que LabVIEW pone a disposición. Presenta un buen rendimiento y la posibilidad de explorar los grupos de canales y canales, además de gráficos.
+El archivo completo SubData y TopData son leidos mediante TDMS File Viewer, un Vi que LabVIEW pone a disposición. Presenta un buen rendimiento y la posibilidad de explorar los grupos de canales y canales mediante tablas y gráficos.
+
 ![image](https://user-images.githubusercontent.com/68162041/185852134-d519854b-5956-4699-9921-76ee8cbd650a.png)
