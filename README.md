@@ -23,7 +23,7 @@ VisorTDMS.vi es un software que permite sincronizar un archivo de video con dos 
 
 **Figura 1.** Interfaz VisorTDMS.vi
 
-## Controles VisorTDMS.vi
+## Controles VisorTDMS
 Mediante los diferentes controles, VisorTDMS.vi permite explorar los archivos TDMS cargados, avanzar por los diferentes frames del video y guardar datos asociados a estos en un archivo de Excel al tiempo que guarda la imagen correspondiente.
 
 ![fig_InterfazVisorTDMS](/img/fig_InterfazVisorTDMSnumerales.svg)
