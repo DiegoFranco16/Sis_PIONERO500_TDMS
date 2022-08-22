@@ -7,11 +7,11 @@
 4. [Consideraciones finales de VisorTDMS.vi a nivel de usuario](#consideraciones-finales-de-visortdms.vi-a-nivel-de-usuario)
 5. [Requerimientos de software](#requerimientos-de-software)
 6. [Consideraciones de desarrollo](#consideraciones-de-desarrollo)
-6.1. [Lectura de video](#lectura-de-video)
-6.2. [Sincronización con archivos TDMS](#sincronización-con-archivos-tdms)
-6.3. [Proceso guardado de datos](#proceso-guardado-de-datos)
-6.4. [Visualización archivos TDMS](#visualización-archivos-tdms)
-6.5. [Condiciones de interfaz](#condiciones-de-interfaz)
+7. [Lectura de video](#lectura-de-video)
+8. [Sincronización con archivos TDMS](#sincronización-con-archivos-tdms)
+9. [Proceso guardado de datos](#proceso-guardado-de-datos)
+10. [Visualización archivos TDMS](#visualización-archivos-tdms)
+11. [Condiciones de interfaz](#condiciones-de-interfaz)
 
 
 
