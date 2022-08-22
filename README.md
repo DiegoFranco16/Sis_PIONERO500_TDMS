@@ -1,14 +1,18 @@
 # VisorTDMS
 ## Sistema de presentación de datos de Pionero500
 
-VisorTDMS.vi es un software que permite sincronizar un archivo de video con dos archivos TDMS, correspondientes a la información de TopData y SubData de Pionero500.
+VisorTDMS.vi es un software que permite sincronizar un archivo de video con dos archivos TDMS. La interfaz de VisorTDMS.vi es mostrada en la Figura 1.
 
 ![fig_InterfazVisorTDMS](/img/fig_InterfazVisorTDMS.png)
+*Figura 1.* Interfaz VisorTDMS.vi
 
-##Controles VisorTDMS.vi
+## Controles VisorTDMS.vi
 Mediante los diferentes controles, VisorTDMS.vi permite explorar los archivos TDMS cargados, avanzar por los diferentes frames del video y guardar datos asociados a estos en un archivo de Excel al tiempo que guarda la imagen correspondiente.
 
 ![fig_InterfazVisorTDMS](/img/fig_InterfazVisorTDMS numerales.svg)
+*Figura 2.* Interfaz VisorTDMS.vi con numeración de componentes
+
+A continuación, y en relación con los numerales de la Figura 2, se lista todo lo que debe saber para sacar el máximo provecho al sistema de presentación de datos desarrollado para Pionero500:
 1.	Path .avi permite precargar un video en formato AVI (*.avi) en el programa. De no hacerlo, VisorTDMS lo pedirá igualmente al ser ejecutado.
 2.	Timestamp LabVIEW indica el time stamp por defecto del video cargado. En caso de no ser uno de los cuatro videos de prueba, permite modificar su valor numérico para ajustar la hora inicial del video.
 3.	Time stamp video indica el time stamp del frame mostrado en pantalla.
@@ -41,4 +45,5 @@ Mediante los diferentes controles, VisorTDMS.vi permite explorar los archivos TD
 30.	Requisitos VI muestra una recomendación imprescindible, para garantizar que el archivo Excel generado se pueda sobre escribir exitosamente.
 31.	El botón Exit termina el programa exitosamente, cerrando los procesos necesarios.
 
-
+![fig_InterfazVisorTDMS](/img/fig_InterfazVisorTDMS_No data.png)
+*Figura 2.* Interfaz VisorTDMS.vi con numeración de componentes
