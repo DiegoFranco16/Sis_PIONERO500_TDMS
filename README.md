@@ -51,5 +51,17 @@ A continuación, y en relación con los numerales de la Figura 2, se lista todo 
 ![fig_InterfazVisorTDMS](/img/fig_InterfazVisorTDMS_Guardando.png)
 **Figura 4.** Interfaz VisorTDMS.vi mientras está guardando un dato
 
-![fig_InterfazVisorTDMS](/img/fig_InterfazVisorTDMS_Guardando.png)
-**Figura 5.** Visualizador de archivo TDMS TopData
+![fig_InterfazVisorTDMS](/img/fig_InterfazTDMS_File_Viewer_TopData.png)
+**Figura 5.** Visualizador de archivo TDMS TopData, mediante *TDMS File Viewer* de LabVIEW
+
+![fig_InterfazVisorTDMS](/img/fig_InterfazTDMS_File_Viewer_SubData.png)
+**Figura 6.** Visualizador de archivo TDMS SubData, mediante *TDMS File Viewer* de LabVIEW
+
+## Archivos creados por VisorTDMS.vi
+
+Luego de oprimir el botón Guardar dato, mostrado con el numeral 27 de la Figura 2, se crean los siguientes archivos y carpetas asociadas:
+•	Carpeta en el directorio raíz del programa …\Capturas\  NombreVideo\ 
+•	Dentro de la carpeta …\Capturas\  NombreVideo\ se crea el archivo  NombreVideo.xlsx, el cual corresponde al archivo Excel mostrado en la Figura 7, cuyo contenido se observa en la Figura 8.
+•	Dentro de la carpeta …\Capturas\  NombreVideo\ se guarda la imagen correspondiente al frame del video cargado, como se observa en la Figura 7.
+* hola
+
