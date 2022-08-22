@@ -55,6 +55,7 @@ A continuación, y en relación con los numerales de la Figura 2, se lista todo 
 **Figura 5.** Visualizador de archivo TDMS TopData, mediante *TDMS File Viewer* de LabVIEW
 
 ![fig_InterfazVisorTDMS](/img/fig_InterfazTDMS_File_Viewer_SubData.png)
+
 **Figura 6.** Visualizador de archivo TDMS SubData, mediante *TDMS File Viewer* de LabVIEW
 
 ## Archivos creados por VisorTDMS.vi
