@@ -79,12 +79,24 @@ Luego de oprimir el botón Guardar dato, mostrado con el numeral 27 de la Figura
 
 **Figura 8.** Contenido ejemplo del archivo …\Capturas\NombreVideo\NombreVideo.xlsx luego de ejecutar VisorTDMS.vi
 
-## Consideraciones finales de VisorTDMS.vi
+## Consideraciones finales de VisorTDMS.vi a nivel de usuario
 * Luego de generar hacer las capturas pertinentes según la necesidad del usuario, posteriormente, se puede cargar nuevamente el mismo video y continuar guardando los datos deseados. Esta acción sobre escribe el archivo  NombreVideo.xlsx generado con anterioridad sin perder su información.
 * El no cargar alguno de los 3 archivos solicitados hará que la captura de datos quede incompleta.
 * Como se muestra en el numeral 30 de la Figura 2, el archivo de video cargado debe estar en formato AVI (*.avi), además de ejecutar VisorTDMS.vi desde una ubicación no sincronizada en nube (como OneDrive, Drive, Dropbox o similares), dado que puede generar errores al momento de sobre escribir el archivo NombreVideo.xlsx generado, dado que este es usado para la sincronización de la nube en cuestión.
 
 ***
 
-Algo
+## Requerimientos de software
+Si se desea ejecutar o modificar el código fuente de VisorTDMS, es importante contar con lo siguiente:
+* Directorio VisorTDMS, que debe contener _CreacionArchivos.vi y VisorTDMS.vi
+* Tener instalado la plataforma de desarrollo LabVIEW, con el módulo de Vision and Motion
+
+## Consideraciones de desarrollo
+Dados unos errores de codec en la segunda versión del paquete de *Vision* de LabVIEW, encontrado en la sección de Vision and Motion, para la lectura de los videos en formato AVI se usa la primera versión, que si bien no aparece en el menú del *Block Diagram*, se puede encontrar en la ruta ![image](https://user-images.githubusercontent.com/68162041/185844147-4c2fb417-dd5c-4712-ae4b-a3d21dceb0bd.png)
+
+![image](https://user-images.githubusercontent.com/68162041/185843897-d1e10624-2f1b-4ec5-be45-a766921c0921.png)
+
+
+
+
 
