@@ -1,11 +1,18 @@
 # VisorTDMS
 
 ## Table of Contents
-1. [General Info](#general-info)
-2. [Technologies](#technologies)
-3. [Installation](#installation)
-4. [Collaboration](#collaboration)
-5. [FAQs](#faqs)
+1. [Sistema de presentación de datos de Pionero500](#sistema-de-presentación-de-datos-de-pionero500)
+2. [Controles VisorTDMS.vi](#controles-visortdms.vi)
+3. [Archivos creados por VisorTDMS.vi](#archivos-creados-por-visortdms.vi)
+4. [Consideraciones finales de VisorTDMS.vi a nivel de usuario](#consideraciones-finales-de-visortdms.vi-a-nivel-de-usuario)
+5. [Requerimientos de software](#requerimientos-de-software)
+6. [Consideraciones de desarrollo](#consideraciones-de-desarrollo)
+6.1. [Lectura de video](#lectura-de-video)
+6.2. [Sincronización con archivos TDMS](#sincronización-con-archivos-tdms)
+6.3. [Proceso guardado de datos](#proceso-guardado-de-datos)
+6.4. [Visualización archivos TDMS](#visualización-archivos-tdms)
+6.5. [Condiciones de interfaz](#condiciones-de-interfaz)
+
 
 
 ## Sistema de presentación de datos de Pionero500
@@ -112,7 +119,7 @@ Sin embargo, dados unos errores de codec en la segunda versión del paquete de *
 ![image](https://user-images.githubusercontent.com/68162041/185844357-ec66c88f-bcb1-4ead-af8b-d918addd6254.png)
 ![image](https://user-images.githubusercontent.com/68162041/185844433-4ca7e8b6-0338-4b5d-977f-fc0310e562f8.png)
 
-###  Sincronizaciónn con archivos TDMS
+###  Sincronización con archivos TDMS
 Dado que los datos de SubData y TopData fueron adquiridos de manera independiente, la parte decimal de los segundos no es igual para las mediciones adquiridas. Además, la hora inicial de video es aproximada, y su incremento de tiempo está calculado considerando los fps del archivo de video entregado por Pionero500. Por lo tanto, para poder sincronizar los frame del video con los archivos TDMS cargados, se elimina la parte decimal de los segundos.
 
 ![image](https://user-images.githubusercontent.com/68162041/185851502-e9858592-0e3b-4702-aa80-f8a5c48e37e8.png)
