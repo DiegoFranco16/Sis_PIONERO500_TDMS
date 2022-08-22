@@ -118,6 +118,7 @@ Dado que los datos de SubData y TopData fueron adquiridos de manera independient
 ![image](https://user-images.githubusercontent.com/68162041/185851502-e9858592-0e3b-4702-aa80-f8a5c48e37e8.png)
 ![image](https://user-images.githubusercontent.com/68162041/185851554-c1d65a2c-e9a0-4951-9801-519d295a6a7a.png)
 ![image](https://user-images.githubusercontent.com/68162041/185851643-db0d74ba-e51d-4e4f-bd32-0d3af35cf46f.png)
+![image](https://user-images.githubusercontent.com/68162041/185985244-7478b1c6-955b-4e67-a9d3-1c00ec148b34.png)
 
 
 Por otra parte, el sistema está desarrollado con base en los 4 videos de Pionero500 de los cuales se sabía la hora aproximada de inicio, por lo que se precarga un valor en timestamp LabVIEW.
@@ -129,10 +130,24 @@ Por otra parte, el sistema está desarrollado con base en los 4 videos de Pioner
 Para videos nombrados diferente, se debe considerar: *timestamp LabVIEW* = Hora_inicio_video - Tiempo_cero_LabVIEW,  donde Tiempo_cero_LabVIEW corresponde a 7:00:00,000 p. m. 31/12/1903, dado que LabVIEW almacena la fecha/hora en relación con Greenwich, UK (Diferente a DIAdem que trabaja con tiempos absolutos). Para ayudar en este cálculo conviene usar https://www.ncei.noaa.gov/erddap/convert/time.html?n=63816111290&units=seconds+since+1903-12-31, el cual nos ofrece el *timestamp LabVIEW* necesario, o en su defecto, un valor muy aproximado que podemos ajustar sumando los segundos necesarios.
 
 ### Proceso guardado de datos
-Para guardas los datos de los diferentes indicadores mostrados en la interfaz de VisorTDMS, se crea la carpeta correspondiente con ayuda de __CeacionArchivos.vi 
+Para guardas los datos de los diferentes indicadores mostrados en la interfaz de VisorTDMS, se crea la carpeta correspondiente a la misión (NombreVideo) con ayuda de _CeacionArchivos.vi, el cual verifica la existencia de una carpeta y archivo y en caso de ser inexistente, los crea. Así, se guarda el frame correspondiente.
 
+![image](https://user-images.githubusercontent.com/68162041/185980059-27fb7b06-9eb8-4033-b297-f12acdc3dd81.png)
+
+Para guardar los datos de los indicadores y el número del frame asociado a la imagen en un archivo de Excel, como se observa en la Figura 8, se implementa *Write To Measurement File*, el cual permite generar diferentes tipos de datos mediante señales, en este caso, *.xlsx.
+
+Se explora la posibilidad de generar el archivo Excel mediante *Write Delimited Spreadsheet.vi*, pero los archivos *.xls generados mostraban un error aparente en el formato (al dar aceptar abría sin problema). También, se exploró la posibilida de usar las herramientas de report generator, pero al momento de guardar los datos ejecutaaba Excel.exe en windows, por lo que quizás, en un programa sin la suite de office instalada presentaría problemas.
+
+El mejor resultado a nivel de usuario, en el cual todo el proceso sucede oculto, fue con *Write To Measurement File*, el cual solo recibe señales como entrada, que finalmente son traducidas en vectores numéricos. Dicho esto, y considerando que los datos almacenados son numéricos inluyendo frame, se utiliza *Set Dynamic Data Attributes* para definir los nombres de las señales, que se traducen en los nombres de las columnas el *.xlsx generado. En cada acción del botón "Guardar Dato" (save data) se unen las señales mediante *Merge Signals* y se guarda exitosamente la información deseada.
+
+![image](https://user-images.githubusercontent.com/68162041/185981034-bde042db-65a0-4589-a09d-6762293666bf.png)
 
 ### Visualización archivos TDMS
 El archivo completo SubData y TopData son leidos mediante TDMS File Viewer, un Vi que LabVIEW pone a disposición. Presenta un buen rendimiento y la posibilidad de explorar los grupos de canales y canales mediante tablas y gráficos.
 
 ![image](https://user-images.githubusercontent.com/68162041/185852134-d519854b-5956-4699-9921-76ee8cbd650a.png)
+
+### Condiciones de interfaz
+Los diferentes controles e indicadores de la interfaz de VisorTDMS deben contar con límites que garanticen su óptimo funcionamiento. Por lo tato, se informa cuando no hay datos asociados al frame y se condicionan los valores máximos y mínimos del slide de control, al igual de los botones para retroceder y avanzar, tanto por valor como en un 10% de la duración del video cargado.
+
+![image](https://user-images.githubusercontent.com/68162041/185985029-5f4e4c64-36cc-436c-abb9-1e39622cd8c6.png)
