@@ -95,7 +95,7 @@ Luego de oprimir el botón Guardar dato, mostrado con el numeral 27 de la Figura
 
 **Figura 8.** Contenido ejemplo del archivo …\Capturas\NombreVideo\NombreVideo.xlsx luego de ejecutar VisorTDMS.vi
 
-## Consideraciones finales de VisorTDMS.vi a nivel de usuario
+## Consideraciones finales de VisorTDMS a nivel de usuario
 * Luego de generar hacer las capturas pertinentes según la necesidad del usuario, posteriormente, se puede cargar nuevamente el mismo video y continuar guardando los datos deseados. Esta acción sobre escribe el archivo  NombreVideo.xlsx generado con anterioridad sin perder su información.
 * El no cargar alguno de los 3 archivos solicitados hará que la captura de datos quede incompleta.
 * Como se muestra en el numeral 30 de la Figura 2, el archivo de video cargado debe estar en formato AVI (*.avi), además de ejecutar VisorTDMS.vi desde una ubicación no sincronizada en nube (como OneDrive, Drive, Dropbox o similares), dado que puede generar errores al momento de sobre escribir el archivo NombreVideo.xlsx generado, dado que este es usado para la sincronización de la nube en cuestión.
