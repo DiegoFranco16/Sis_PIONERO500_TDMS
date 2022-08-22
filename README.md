@@ -2,8 +2,8 @@
 
 ## Table of Contents
 1. [Sistema de presentación de datos de Pionero500](#sistema-de-presentación-de-datos-de-pionero500)
-2. [Controles VisorTDMS.vi](#controles-visortdms.vi)
-3. [Archivos creados por VisorTDMS.vi](#archivos-creados-por-visortdms.vi)
+2. [Controles VisorTDMS.vi](#controles-visortdms)
+3. [Archivos creados por VisorTDMS.vi](#archivos-creados-por-visortdms)
 4. [Consideraciones finales de VisorTDMS.vi a nivel de usuario](#consideraciones-finales-de-visortdms.vi-a-nivel-de-usuario)
 5. [Requerimientos de software](#requerimientos-de-software)
 6. [Consideraciones de desarrollo](#consideraciones-de-desarrollo)
@@ -79,7 +79,7 @@ A continuación, y en relación con los numerales de la Figura 2, se lista todo 
 
 **Figura 6.** Visualizador de archivo TDMS SubData, mediante *TDMS File Viewer* de LabVIEW
 
-## Archivos creados por VisorTDMS.vi
+## Archivos creados por VisorTDMS
 
 Luego de oprimir el botón Guardar dato, mostrado con el numeral 27 de la Figura 2, se crean los siguientes archivos y carpetas asociadas:
 * Carpeta en el directorio raíz del programa …\Capturas\NombreVideo\ 
