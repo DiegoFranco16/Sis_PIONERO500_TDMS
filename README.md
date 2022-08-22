@@ -46,4 +46,4 @@ A continuación, y en relación con los numerales de la Figura 2, se lista todo 
 31.	El botón Exit termina el programa exitosamente, cerrando los procesos necesarios.
 
 ![fig_InterfazVisorTDMS](/img/fig_InterfazVisorTDMS_Nodata.png)
-*Figura 2.* Interfaz VisorTDMS.vi con numeración de componentes
+**Figura 2.** Interfaz VisorTDMS.vi con numeración de componentes
