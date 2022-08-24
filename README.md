@@ -1,6 +1,6 @@
 # VisorTDMS
 
-## Table of Contents
+## Índice
 1. [Sistema de presentación de datos de Pionero500](#sistema-de-presentación-de-datos-de-pionero500)
 2. [Controles VisorTDMS](#controles-visortdms)
 3. [Archivos creados por VisorTDMS](#archivos-creados-por-visortdms)
