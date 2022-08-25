@@ -156,12 +156,19 @@ Si se desea ejecutar o modificar el código fuente de `VisorTDMS.vi`, es importa
 
 ### Instalación Vision Development Module
 #### Opción 1
-Ingresar al sitio de [descarga](https://www.ni.com/es-co/support/downloads/software-products/download.vision-development-module.html#288612) de NI. Allí, seleccionar la versión `2018 SP1` y dar clic en descargar. En caso de ser necesario, iniciar sesión para poder proceder con la descarga.
+* Ingresar al sitio de [descarga](https://www.ni.com/es-co/support/downloads/software-products/download.vision-development-module.html#288612) de NI. Allí, seleccionar la versión `2018 SP1` y dar clic en DESCARGAR. En caso de ser necesario, iniciar sesión para poder proceder con la descarga.
 
 ![image](https://user-images.githubusercontent.com/68162041/186588070-0bc3b924-1743-46de-a033-c6c95282a4a8.png)
 
-Finalizada la descarga, ejecutar el archivo: ![image](https://user-images.githubusercontent.com/68162041/186588187-eb476d1a-569d-4ac6-b992-df9e7a4e4432.png)
+* Finalizada la descarga, ejecutar el archivo: ![image](https://user-images.githubusercontent.com/68162041/186588187-eb476d1a-569d-4ac6-b992-df9e7a4e4432.png)
+* Seguir el paso a paso de la instalación.
+* Al finalizar, realizar la activación del producto en caso de ser necesario.
 
+#### Opción 2
+* Descargar el [instalador](\instaladorvisionLV\ni-vision-development-module_18.5_online_repack3.exe) de NI.
+* Ejecutar el archivo ![image](https://user-images.githubusercontent.com/68162041/186588187-eb476d1a-569d-4ac6-b992-df9e7a4e4432.png) descargado
+* Seguir el paso a paso de la instalación.
+* Al finalizar, realizar la activación del producto en caso de ser necesario.
 
 
 ### Consideraciones de desarrollo
