@@ -55,6 +55,20 @@ Por otra parte, los archivos `*.bin` generados por Pionero500, pueden ser transf
 
 **Figura 1.** Interfaz `VisorTDMS.vi`
 
+Para el uso normal de VisorTDMS debe seguir los siguientes pasos:
+1.	Abrir el VisorTDMS.
+2.	Cargar un video en formato AVI.
+3.	Cargar el archivo correspondiente a TopData.tdms
+4.	Cargar el archivo correspondiente a SubData.tdms
+5.	Mover el slide azul o los botones debajo de este (elemento 13, 14, 15, 16, 17 y 18 en la Figura 2).
+6.	Al observar una imagen de interés en la pantalla central y verificar que tiene datos asociados en los indicadores de la derecha (elementos 20, 21, 22, 23, 24, 25 y 26 en la Figura 2), dar clic en el botón Guardar dato.
+7.	Repetir el paso 5 y 6 las veces que lo desee.
+8.	Dar clic en el botón Exit cuando haya terminado de guardar los datos deseados.
+9.	Revisar la ubicación desde la cual ejecutó VisorTDMS. Allí encontrará la carpeta llamada *Capturas*, en la cual estará una carpeta con el nombre del video cargado. Dentro de esta carpeta encontrará todas las imágenes guardadas y un archivo de Excel con los datos de los indicadores y el nombre de la imagen guardada en cuestión.
+10.	Cerrar el archivo de Excel del paso 9.
+11.	Repetir el proceso desde el numeral 1. Cargar el mismo video sobre escribirá el archivo de Excel visto en el paso 9.
+
+
 ### Controles VisorTDMS
 Mediante los diferentes controles, `VisorTDMS.vi` permite explorar los archivos TDMS cargados, avanzar por los diferentes frames del video y guardar datos asociados a estos en un archivo de Excel al tiempo que guarda la imagen correspondiente.
 
