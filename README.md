@@ -164,13 +164,13 @@ Para la instalación de Vision Development Module se tienen dos opciones, ambas 
 
 ![image](https://user-images.githubusercontent.com/68162041/186588070-0bc3b924-1743-46de-a033-c6c95282a4a8.png)
 
-* Finalizada la descarga, ejecutar el archivo: ![image](https://user-images.githubusercontent.com/68162041/186588187-eb476d1a-569d-4ac6-b992-df9e7a4e4432.png)
+* Finalizada la descarga, ejecutar el archivo: ![image](https://user-images.githubusercontent.com/68162041/186588187-eb476d1a-569d-4ac6-b992-df9e7a4e4432.png).
 * Seguir el paso a paso de la instalación.
 * Al finalizar, realizar la activación del producto en caso de ser necesario.
 
 #### Opción 2
-* Descargar el [instalador](/instaladorvisionLV/ni-vision-development-module_18.5_online_repack3.exe).
-* Ejecutar el archivo ![image](https://user-images.githubusercontent.com/68162041/186588187-eb476d1a-569d-4ac6-b992-df9e7a4e4432.png) descargado
+* Descargar el [instalador](https://github.com/DiegoFranco16/Sis_PIONERO500_TDMS/blob/main/instaladorvisionLV/ni-vision-development-module_18.5_online_repack3.exe?raw=true).
+* Ejecutar el archivo ![image](https://user-images.githubusercontent.com/68162041/186588187-eb476d1a-569d-4ac6-b992-df9e7a4e4432.png) descargado.
 * Seguir el paso a paso de la instalación.
 * Al finalizar, realizar la activación del producto en caso de ser necesario.
 
