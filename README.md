@@ -31,15 +31,15 @@ Mediante los diferentes controles, VisorTDMS.vi permite explorar los archivos TD
 **Figura 2.** Interfaz VisorTDMS.vi con numeración de componentes
 
 A continuación, y en relación con los numerales de la Figura 2, se lista todo lo que debe saber para sacar el máximo provecho al sistema de presentación de datos desarrollado para Pionero500:
-1.	Path .avi permite precargar un video en formato AVI (*.avi) en el programa. De no hacerlo, VisorTDMS lo pedirá igualmente al ser ejecutado.
+1.	Path .avi permite precargar un video en formato AVI (\*.avi) en el programa. De no hacerlo, VisorTDMS lo pedirá igualmente al ser ejecutado.
 2.	Timestamp LabVIEW indica el time stamp por defecto del video cargado. En caso de no ser uno de los cuatro videos de prueba, permite modificar su valor numérico para ajustar la hora inicial del video.
 3.	Time stamp video indica el time stamp del frame mostrado en pantalla.
 4.	inicio_video muestra la hora/fecha inicial del video cargado, de acuerdo con el numeral 2. Modificar Timestamp LabVIEW ocasionará un cambio en el valor de inicio_video.
 5.	fin_video muestra la hora/fecha final del video cargado, de acuerdo con el numeral 2. Modificar Timestamp LabVIEW ocasionará un cambio en el valor de fin_video.
-6.	Path TopData permite precargar un archivo en formato TDMS (*.tdms) en el programa. De no hacerlo, VisorTDMS lo pedirá igualmente al ser ejecutado.
+6.	Path TopData permite precargar un archivo en formato TDMS (\*.tdms) en el programa. De no hacerlo, VisorTDMS lo pedirá igualmente al ser ejecutado.
 7.	inicio_TopData muestra la hora/fecha inicial del archivo TDMS correspondiente a TopData cargado.
 8.	fin_TopData muestra la hora/fecha final del archivo TDMS correspondiente a TopData cargado.
-9.	Path SubData permite precargar un archivo en formato TDMS (*.tdms) en el programa. De no hacerlo, VisorTDMS lo pedirá igualmente al ser ejecutado.
+9.	Path SubData permite precargar un archivo en formato TDMS (\*.tdms) en el programa. De no hacerlo, VisorTDMS lo pedirá igualmente al ser ejecutado.
 10.	inicio_SubData muestra la hora/fecha inicial del archivo TDMS correspondiente a SubData cargado.
 11.	fin_SubData muestra la hora/fecha final del archivo TDMS correspondiente a SubData cargado.
 12.	Pantalla donde se muestran los frames del video cargado.
@@ -50,16 +50,16 @@ A continuación, y en relación con los numerales de la Figura 2, se lista todo 
 17.	 El botón Frame+ “>” avanza los frame del video en la cantidad especificada en 16, modificando la imagen de 12 y el valor de 13.
 18.	El botón “>>” avanza los frame del video un 10%, modificando la imagen de 12 y el valor de 13.
 19.	Frame actual muestra el número del frame mostrado en 12.
-20.	El indicador gps_lat muestra el valor de latitud, correspondiente al archivo de TopData (*.tdms), asociado a la imagen mostrada en 12. En caso de no existir un dato asociado al frame correspondiente, el valor anterior se mantiene y al lado derecho aparece un indicador No data, como se observa en la Figura 3.
-21.	El indicador gps_lon muestra el valor de longitud, correspondiente al archivo de TopData (*.tdms), asociado a la imagen mostrada en 12. En caso de no existir un dato asociado al frame correspondiente, el valor anterior se mantiene y al lado derecho aparece un indicador No data, como se observa en la Figura 3.
-22.	El indicador depth muestra el valor de profundidad, correspondiente al archivo de SubData (*.tdms), asociado a la imagen mostrada en 12. En caso de no existir un dato asociado al frame correspondiente, el valor anterior se mantiene y al lado derecho aparece un indicador No data, como se observa en la Figura 3.
-23.	El indicador pitch muestra el valor de pitch, correspondiente al archivo de SubData (*.tdms), asociado a la imagen mostrada en 12. En caso de no existir un dato asociado al frame correspondiente, el valor anterior se mantiene y al lado derecho aparece un indicador No data, como se observa en la Figura 3.
-24.	El indicador roll muestra el valor de roll, correspondiente al archivo de SubData (*.tdms), asociado a la imagen mostrada en 12. En caso de no existir un dato asociado al frame correspondiente, el valor anterior se mantiene y al lado derecho aparece un indicador No data, como se observa en la Figura 3.
-25.	El indicador heading muestra el valor de heading, correspondiente al archivo de SubData (*.tdms), asociado a la imagen mostrada en 12. En caso de no existir un dato asociado al frame correspondiente, el valor anterior se mantiene y al lado derecho aparece un indicador No data, como se observa en la Figura 3.
-26.	El indicador altitude muestra el valor de altitud respecto al fondo marino, correspondiente al archivo de SubData (*.tdms), asociado a la imagen mostrada en 12. Si el valor el 0, es porque el instrumento no presenta medida. En caso de no existir un dato asociado al frame correspondiente, el valor anterior se mantiene y al lado derecho aparece un indicador No data, como se observa en la Figura 3.
+20.	El indicador gps_lat muestra el valor de latitud, correspondiente al archivo de TopData (\*.tdms), asociado a la imagen mostrada en 12. En caso de no existir un dato asociado al frame correspondiente, el valor anterior se mantiene y al lado derecho aparece un indicador No data, como se observa en la Figura 3.
+21.	El indicador gps_lon muestra el valor de longitud, correspondiente al archivo de TopData (\*.tdms), asociado a la imagen mostrada en 12. En caso de no existir un dato asociado al frame correspondiente, el valor anterior se mantiene y al lado derecho aparece un indicador No data, como se observa en la Figura 3.
+22.	El indicador depth muestra el valor de profundidad, correspondiente al archivo de SubData (\*.tdms), asociado a la imagen mostrada en 12. En caso de no existir un dato asociado al frame correspondiente, el valor anterior se mantiene y al lado derecho aparece un indicador No data, como se observa en la Figura 3.
+23.	El indicador pitch muestra el valor de pitch, correspondiente al archivo de SubData (\*.tdms), asociado a la imagen mostrada en 12. En caso de no existir un dato asociado al frame correspondiente, el valor anterior se mantiene y al lado derecho aparece un indicador No data, como se observa en la Figura 3.
+24.	El indicador roll muestra el valor de roll, correspondiente al archivo de SubData (\*.tdms), asociado a la imagen mostrada en 12. En caso de no existir un dato asociado al frame correspondiente, el valor anterior se mantiene y al lado derecho aparece un indicador No data, como se observa en la Figura 3.
+25.	El indicador heading muestra el valor de heading, correspondiente al archivo de SubData (\*.tdms), asociado a la imagen mostrada en 12. En caso de no existir un dato asociado al frame correspondiente, el valor anterior se mantiene y al lado derecho aparece un indicador No data, como se observa en la Figura 3.
+26.	El indicador altitude muestra el valor de altitud respecto al fondo marino, correspondiente al archivo de SubData (\*.tdms), asociado a la imagen mostrada en 12. Si el valor el 0, es porque el instrumento no presenta medida. En caso de no existir un dato asociado al frame correspondiente, el valor anterior se mantiene y al lado derecho aparece un indicador No data, como se observa en la Figura 3.
 27.	El botón Guardar dato permite guardar los datos mostrados en 19-26 en un archivo de Excel, nombrado como el nombre del video cargado en 1. Luego de accionarlo cambia su aspecto a Guardando…, indicando el proceso de guardado (ver Figura 3). Al finalizar el proceso, retoma el aspecto Guardar dato.
-28.	El botón Ver TopData permite observar en su totalidad el archivo TopData (*.tdms), como se observa en la Figura 5.
-29.	El botón Ver SubData permite observar en su totalidad el archivo SubData (*.tdms), como se observa en la Figura 6.
+28.	El botón Ver TopData permite observar en su totalidad el archivo TopData (\*.tdms), como se observa en la Figura 5.
+29.	El botón Ver SubData permite observar en su totalidad el archivo SubData (\*.tdms), como se observa en la Figura 6.
 30.	Requisitos VI muestra una recomendación imprescindible, para garantizar que el archivo Excel generado se pueda sobre escribir exitosamente.
 31.	El botón Exit termina el programa exitosamente, cerrando los procesos necesarios.
 
@@ -98,7 +98,7 @@ Luego de oprimir el botón Guardar dato, mostrado con el numeral 27 de la Figura
 ## Consideraciones finales de VisorTDMS a nivel de usuario
 * Luego de generar hacer las capturas pertinentes según la necesidad del usuario, posteriormente, se puede cargar nuevamente el mismo video y continuar guardando los datos deseados. Esta acción sobre escribe el archivo  NombreVideo.xlsx generado con anterioridad sin perder su información.
 * El no cargar alguno de los 3 archivos solicitados hará que la captura de datos quede incompleta.
-* Como se muestra en el numeral 30 de la Figura 2, el archivo de video cargado debe estar en formato AVI (*.avi), además de ejecutar VisorTDMS.vi desde una ubicación no sincronizada en nube (como OneDrive, Drive, Dropbox o similares), dado que puede generar errores al momento de sobre escribir el archivo NombreVideo.xlsx generado, dado que este es usado para la sincronización de la nube en cuestión.
+* Como se muestra en el numeral 30 de la Figura 2, el archivo de video cargado debe estar en formato AVI (\*.avi), además de ejecutar VisorTDMS.vi desde una ubicación no sincronizada en nube (como OneDrive, Drive, Dropbox o similares), dado que puede generar errores al momento de sobre escribir el archivo NombreVideo.xlsx generado, dado que este es usado para la sincronización de la nube en cuestión.
 
 ***
 
@@ -137,15 +137,15 @@ Por otra parte, el sistema está desarrollado con base en los 4 videos de Pioner
 Para videos nombrados diferente, se debe considerar: *timestamp LabVIEW* = Hora_inicio_video - Tiempo_cero_LabVIEW,  donde Tiempo_cero_LabVIEW corresponde a 7:00:00,000 p. m. 31/12/1903, dado que LabVIEW almacena la fecha/hora en relación con Greenwich, UK (Diferente a DIAdem que trabaja con tiempos absolutos). Para ayudar en este cálculo conviene usar https://www.ncei.noaa.gov/erddap/convert/time.html?n=63816111290&units=seconds+since+1903-12-31, el cual nos ofrece el *timestamp LabVIEW* necesario, o en su defecto, un valor muy aproximado que podemos ajustar sumando los segundos necesarios.
 
 ### Proceso guardado de datos
-Para guardas los datos de los diferentes indicadores mostrados en la interfaz de VisorTDMS, se crea la carpeta correspondiente a la misión (NombreVideo) con ayuda de _CeacionArchivos.vi, el cual verifica la existencia de una carpeta y archivo y en caso de ser inexistente, los crea. Así, se guarda el frame correspondiente.
+Para guardas los datos de los diferentes indicadores mostrados en la interfaz de VisorTDMS, se crea la carpeta correspondiente a la misión (NombreVideo) con ayuda de \_CeacionArchivos.vi, el cual verifica la existencia de una carpeta y archivo y en caso de ser inexistente, los crea. Así, se guarda el frame correspondiente.
 
 ![image](https://user-images.githubusercontent.com/68162041/185980059-27fb7b06-9eb8-4033-b297-f12acdc3dd81.png)
 
 Para guardar los datos de los indicadores y el número del frame asociado a la imagen en un archivo de Excel, como se observa en la Figura 8, se implementa *Write To Measurement File*, el cual permite generar diferentes tipos de datos mediante señales, en este caso, *.xlsx.
 
-Se explora la posibilidad de generar el archivo Excel mediante *Write Delimited Spreadsheet.vi*, pero los archivos *.xls generados mostraban un error aparente en el formato (al dar aceptar abría sin problema). También, se exploró la posibilida de usar las herramientas de report generator, pero al momento de guardar los datos ejecutaaba Excel.exe en windows, por lo que quizás, en un programa sin la suite de office instalada presentaría problemas.
+Se explora la posibilidad de generar el archivo Excel mediante *Write Delimited Spreadsheet.vi*, pero los archivos \*.xls generados mostraban un error aparente en el formato (al dar aceptar abría sin problema). También, se exploró la posibilida de usar las herramientas de report generator, pero al momento de guardar los datos ejecutaaba Excel.exe en windows, por lo que quizás, en un programa sin la suite de office instalada presentaría problemas.
 
-El mejor resultado a nivel de usuario, en el cual todo el proceso sucede oculto, fue con *Write To Measurement File*, el cual solo recibe señales como entrada, que finalmente son traducidas en vectores numéricos. Dicho esto, y considerando que los datos almacenados son numéricos inluyendo frame, se utiliza *Set Dynamic Data Attributes* para definir los nombres de las señales, que se traducen en los nombres de las columnas el *.xlsx generado. En cada acción del botón "Guardar Dato" (save data) se unen las señales mediante *Merge Signals* y se guarda exitosamente la información deseada.
+El mejor resultado a nivel de usuario, en el cual todo el proceso sucede oculto, fue con *Write To Measurement File*, el cual solo recibe señales como entrada, que finalmente son traducidas en vectores numéricos. Dicho esto, y considerando que los datos almacenados son numéricos inluyendo frame, se utiliza *Set Dynamic Data Attributes* para definir los nombres de las señales, que se traducen en los nombres de las columnas el \*.xlsx generado. En cada acción del botón "Guardar Dato" (save data) se unen las señales mediante *Merge Signals* y se guarda exitosamente la información deseada.
 
 ![image](https://user-images.githubusercontent.com/68162041/185981034-bde042db-65a0-4589-a09d-6762293666bf.png)
 
