@@ -34,7 +34,8 @@ Internamente, `_WriteSubData_TDMS.vi` y `_WriteTopData_TDMS.vi` tienen la siguie
 ![image](https://user-images.githubusercontent.com/68162041/186559276-925d8a78-63a4-4e0d-92e5-23820c43376b.png)
 
 ![fig_InterfazVisorTDMS](/img/fig_WriteTopData.svg)
-![image](https://user-images.githubusercontent.com/68162041/186559346-d1a8079e-3074-45e1-a044-726ab6cf91b3.png)
+![image](https://user-images.githubusercontent.com/68162041/186607858-977cbb0a-3e1d-437e-9940-0fd4217ee356.png)
+
 
 Internamente cada SubVI tiene una estructura similar, donde el primer bloque define los metadatos del grupo de canal y los bloques siguientes agregan canales, nombrados con las respectivas constantes. Los datos de los canales y metadatos vienen del cluster de TopData y SubData entregado por Pionero500. Si se desea agregar nuevos canales, basta con conectar un bloque adicional es serie, como se observa en las dos figuras siguientes:
 
