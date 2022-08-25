@@ -15,7 +15,9 @@
 
 ## Sistema de almacenamiento de datos de Pionero500
 
+Para almacenar los datos de Pionero500 en archivos `*.tdms` se tiene en cuenta la arquitectura modular basada en actores, en especial la estructura interna del actor *DB*.
 
+![fig_InterfazVisorTDMS](/img/fig_DBActor.pdf)
 
 
 
