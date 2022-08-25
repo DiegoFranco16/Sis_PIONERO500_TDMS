@@ -25,8 +25,8 @@ Toda la información conocida como SubData llega al actor *DB* a través de *Mes
 
 En el caso *Initialize* se crea el archivo TDMS correspondiente a SubData y TopData, en la ruta especificada y dentro de una carpeta nombrada como la misión. En el caso *Subdata* se procesa y escribe cada uno de los datos del muestreo en el archivo TDMS correspondiente a SubData, por medio del `WriteSubData.vi`, el cual crea un grupo de canales por cada proceso con un subVI asociado a cada proceso, los cuales son Status, AHRS, CTD, Altimeter, SMP, PWR, SC PWR, SC CPU, SC SMP y Control. En el caso *TopData* se procesa y escribe cada uno de los datos del muestreo en el archivo TDMS correspondiente a TopData, por medio de `WriteTopData.vi`, el cual crea un grupo de canales por cada proceso con un subVI asociado a cada proceso, los cuales son Status, DAQ, User Data, Virtual CI y Control. El procesamiento consiste en tomar el cluster de información entregado por los diferentes actores y guardarlos en la estructura definida para Pionero500. Finalmente en el caso *Exit* se cierran y defragmentan los archivo de SubData y TopData para optimizar aún más su espacio en disco, garantizando así un tamaño óptimo para su posterior análisis.
 
-![fig_InterfazVisorTDMS](/img/fig_WriteSubData.png)
-![fig_InterfazVisorTDMS](/img/fig_WriteTopData.png)
+![fig_InterfazVisorTDMS](/img/fig_WriteSubData.svg)
+![fig_InterfazVisorTDMS](/img/fig_WriteTopData.svg)
 
 
 
