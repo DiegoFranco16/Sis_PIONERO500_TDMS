@@ -174,6 +174,11 @@ Para la instalación de Vision Development Module se tienen dos opciones, ambas 
 * Seguir el paso a paso de la instalación.
 * Al finalizar, realizar la activación del producto en caso de ser necesario.
 
+#### Verificar instalación exitosa
+Si la instalación ha sido exitosa, la interfaz de carga de LabVIEW debe incluir ![image](https://user-images.githubusercontent.com/68162041/186591622-d9e873b4-c7dd-4d44-bc3b-441570211785.png)
+
+![image](https://user-images.githubusercontent.com/68162041/186591474-46863581-1025-47ab-b79f-c942b6684f3b.png)
+
 
 ### Consideraciones de desarrollo
 
