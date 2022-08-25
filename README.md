@@ -1,4 +1,4 @@
-# VisorTDMS
+# 
 
 ## Índice
 1. [Sistema de presentación de datos de Pionero500](#sistema-de-presentación-de-datos-de-pionero500)
@@ -15,7 +15,7 @@
 
 
 
-## Sistema de presentación de datos de Pionero500
+## Sistema de presentación de datos de Pionero500 VisorTDMS
 
 VisorTDMS.vi es un software que permite sincronizar un archivo de video con dos archivos TDMS. La interfaz de VisorTDMS.vi es mostrada en la Figura 1.
 
@@ -23,7 +23,7 @@ VisorTDMS.vi es un software que permite sincronizar un archivo de video con dos 
 
 **Figura 1.** Interfaz VisorTDMS.vi
 
-## Controles VisorTDMS
+### Controles VisorTDMS
 Mediante los diferentes controles, VisorTDMS.vi permite explorar los archivos TDMS cargados, avanzar por los diferentes frames del video y guardar datos asociados a estos en un archivo de Excel al tiempo que guarda la imagen correspondiente.
 
 ![fig_InterfazVisorTDMS](/img/fig_InterfazVisorTDMSnumerales.svg)
@@ -79,7 +79,7 @@ A continuación, y en relación con los numerales de la Figura 2, se lista todo 
 
 **Figura 6.** Visualizador de archivo TDMS SubData, mediante *TDMS File Viewer* de LabVIEW
 
-## Archivos creados por VisorTDMS
+### Archivos creados por VisorTDMS
 
 Luego de oprimir el botón Guardar dato, mostrado con el numeral 27 de la Figura 2, se crean los siguientes archivos y carpetas asociadas:
 * Carpeta en el directorio raíz del programa …\Capturas\NombreVideo\ 
@@ -95,21 +95,21 @@ Luego de oprimir el botón Guardar dato, mostrado con el numeral 27 de la Figura
 
 **Figura 8.** Contenido ejemplo del archivo …\Capturas\NombreVideo\NombreVideo.xlsx luego de ejecutar VisorTDMS.vi
 
-## Consideraciones finales de VisorTDMS a nivel de usuario
+### Consideraciones finales de VisorTDMS a nivel de usuario
 * Luego de generar hacer las capturas pertinentes según la necesidad del usuario, posteriormente, se puede cargar nuevamente el mismo video y continuar guardando los datos deseados. Esta acción sobre escribe el archivo  NombreVideo.xlsx generado con anterioridad sin perder su información.
 * El no cargar alguno de los 3 archivos solicitados hará que la captura de datos quede incompleta.
 * Como se muestra en el numeral 30 de la Figura 2, el archivo de video cargado debe estar en formato AVI (\*.avi), además de ejecutar VisorTDMS.vi desde una ubicación no sincronizada en nube (como OneDrive, Drive, Dropbox o similares), dado que puede generar errores al momento de sobre escribir el archivo NombreVideo.xlsx generado, dado que este es usado para la sincronización de la nube en cuestión.
 
 ***
 
-## Requerimientos de software
+### Requerimientos de software
 Si se desea ejecutar o modificar el código fuente de VisorTDMS, es importante contar con lo siguiente:
-* Directorio VisorTDMS, que debe contener _CreacionArchivos.vi y VisorTDMS.vi
+* Directorio VisorTDMS, que debe contener \_CreacionArchivos.vi y VisorTDMS.vi
 * Tener instalado la plataforma de desarrollo LabVIEW, con el módulo de Vision and Motion
 
-## Consideraciones de desarrollo
+### Consideraciones de desarrollo
 
-### Lectura de video
+#### Lectura de video
 El paquete de *Vision* de LabVIEW permite acceder a algunos VI's para la lectura y tratamiento de videos en formato AVI.
 ![image](https://user-images.githubusercontent.com/68162041/185844677-4d8343cf-615d-489c-b09b-3b88b8ca9763.png)
 
@@ -119,7 +119,7 @@ Sin embargo, dados unos errores de codec en la segunda versión del paquete de *
 ![image](https://user-images.githubusercontent.com/68162041/185844357-ec66c88f-bcb1-4ead-af8b-d918addd6254.png)
 ![image](https://user-images.githubusercontent.com/68162041/185844433-4ca7e8b6-0338-4b5d-977f-fc0310e562f8.png)
 
-###  Sincronización con archivos TDMS
+####  Sincronización con archivos TDMS
 Dado que los datos de SubData y TopData fueron adquiridos de manera independiente, la parte decimal de los segundos no es igual para las mediciones adquiridas. Además, la hora inicial de video es aproximada, y su incremento de tiempo está calculado considerando los fps del archivo de video entregado por Pionero500. Por lo tanto, para poder sincronizar los frame del video con los archivos TDMS cargados, se elimina la parte decimal de los segundos.
 
 ![image](https://user-images.githubusercontent.com/68162041/185851502-e9858592-0e3b-4702-aa80-f8a5c48e37e8.png)
@@ -136,7 +136,7 @@ Por otra parte, el sistema está desarrollado con base en los 4 videos de Pioner
 
 Para videos nombrados diferente, se debe considerar: *timestamp LabVIEW* = Hora_inicio_video - Tiempo_cero_LabVIEW,  donde Tiempo_cero_LabVIEW corresponde a 7:00:00,000 p. m. 31/12/1903, dado que LabVIEW almacena la fecha/hora en relación con Greenwich, UK (Diferente a DIAdem que trabaja con tiempos absolutos). Para ayudar en este cálculo conviene usar https://www.ncei.noaa.gov/erddap/convert/time.html?n=63816111290&units=seconds+since+1903-12-31, el cual nos ofrece el *timestamp LabVIEW* necesario, o en su defecto, un valor muy aproximado que podemos ajustar sumando los segundos necesarios.
 
-### Proceso guardado de datos
+#### Proceso guardado de datos
 Para guardas los datos de los diferentes indicadores mostrados en la interfaz de VisorTDMS, se crea la carpeta correspondiente a la misión (NombreVideo) con ayuda de \_CeacionArchivos.vi, el cual verifica la existencia de una carpeta y archivo y en caso de ser inexistente, los crea. Así, se guarda el frame correspondiente.
 
 ![image](https://user-images.githubusercontent.com/68162041/185980059-27fb7b06-9eb8-4033-b297-f12acdc3dd81.png)
@@ -149,12 +149,12 @@ El mejor resultado a nivel de usuario, en el cual todo el proceso sucede oculto,
 
 ![image](https://user-images.githubusercontent.com/68162041/185981034-bde042db-65a0-4589-a09d-6762293666bf.png)
 
-### Visualización archivos TDMS
+#### Visualización archivos TDMS
 El archivo completo SubData y TopData son leidos mediante TDMS File Viewer, un Vi que LabVIEW pone a disposición. Presenta un buen rendimiento y la posibilidad de explorar los grupos de canales y canales mediante tablas y gráficos.
 
 ![image](https://user-images.githubusercontent.com/68162041/185852134-d519854b-5956-4699-9921-76ee8cbd650a.png)
 
-### Condiciones de interfaz
+#### Condiciones de interfaz
 Los diferentes controles e indicadores de la interfaz de VisorTDMS deben contar con límites que garanticen su óptimo funcionamiento. Por lo tato, se informa cuando no hay datos asociados al frame y se condicionan los valores máximos y mínimos del slide de control, al igual de los botones para retroceder y avanzar, tanto por valor como en un 10% de la duración del video cargado.
 
 ![image](https://user-images.githubusercontent.com/68162041/185985029-5f4e4c64-36cc-436c-abb9-1e39622cd8c6.png)
