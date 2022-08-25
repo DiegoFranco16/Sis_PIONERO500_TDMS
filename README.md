@@ -7,7 +7,7 @@
 3. [Controles VisorTDMS](#controles-visortdms)
 4. [Archivos creados por VisorTDMS](#archivos-creados-por-visortdms)
 5. [Consideraciones finales de VisorTDMS a nivel de usuario](#consideraciones-finales-de-visortdms-a-nivel-de-usuario)
-6. [Requerimientos de software](#requerimientos-de-software)
+6. [Requerimientos de software VisorTDMS](#requerimientos-de-software-visortdms)
 7. [Consideraciones de desarrollo](#consideraciones-de-desarrollo)
 8. [Lectura de video](#lectura-de-video)
 9. [Sincronización con archivos TDMS](#sincronización-con-archivos-tdms)
