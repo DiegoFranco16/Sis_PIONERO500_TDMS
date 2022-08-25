@@ -25,8 +25,19 @@ Toda la información conocida como SubData llega al actor *DB* a través de *Mes
 
 En el caso *Initialize* se crea el archivo TDMS correspondiente a SubData y TopData, en la ruta especificada y dentro de una carpeta nombrada como la misión. En el caso *Subdata* se procesa y escribe cada uno de los datos del muestreo en el archivo TDMS correspondiente a SubData, por medio del `_WriteSubData_TDMS.vi`, el cual crea un grupo de canales por cada proceso con un subVI asociado a cada proceso, los cuales son Status, AHRS, CTD, Altimeter, SMP, PWR, SC PWR, SC CPU, SC SMP y Control. En el caso *TopData* se procesa y escribe cada uno de los datos del muestreo en el archivo TDMS correspondiente a TopData, por medio de `_WriteTopData_TDMS.vi`, el cual crea un grupo de canales por cada proceso con un subVI asociado a cada proceso, los cuales son Status, DAQ, User Data, Virtual CI y Control. El procesamiento consiste en tomar el cluster de información entregado por los diferentes actores y guardarlos en la estructura definida para Pionero500. Finalmente en el caso *Exit* se cierran y defragmentan los archivo de SubData y TopData para optimizar aún más su espacio en disco, garantizando así un tamaño óptimo para su posterior análisis.
 
+Internamente, `_WriteSubData_TDMS.vi` y `_WriteTopData_TDMS.vi` tienen la siguiente estructura:
+
 ![fig_InterfazVisorTDMS](/img/fig_WriteSubData.svg)
+![image](https://user-images.githubusercontent.com/68162041/186559276-925d8a78-63a4-4e0d-92e5-23820c43376b.png)
+
 ![fig_InterfazVisorTDMS](/img/fig_WriteTopData.svg)
+![image](https://user-images.githubusercontent.com/68162041/186559346-d1a8079e-3074-45e1-a044-726ab6cf91b3.png)
+
+Internamente cada SubVI tiene una estructura similar, donde el primer bloque define los metadatos del grupo de canal y los bloques siguientes agregan canales, nombrados con las respectivas constantes. Los datos de los canales y metadatos vienen del cluster de TopData y SubData entregado por Pionero500. Si se desea agregar nuevos canales, basta con conectar un bloque adicional es serie, como se observa en las dos figuras siguientes:
+
+![image](https://user-images.githubusercontent.com/68162041/186559873-6f661dd4-2d38-4311-8c32-2872c0b96a49.png)
+![image](https://user-images.githubusercontent.com/68162041/186560061-afcd4efd-3b1b-4484-a335-31186759ce25.png)
+
 
 
 
