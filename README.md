@@ -8,12 +8,13 @@
 4. [Archivos creados por VisorTDMS](#archivos-creados-por-visortdms)
 5. [Consideraciones finales de VisorTDMS a nivel de usuario](#consideraciones-finales-de-visortdms-a-nivel-de-usuario)
 6. [Requerimientos de software VisorTDMS](#requerimientos-de-software-visortdms)
-7. [Consideraciones de desarrollo](#consideraciones-de-desarrollo)
-8. [Lectura de video](#lectura-de-video)
-9. [Sincronización con archivos TDMS](#sincronización-con-archivos-tdms)
-10. [Proceso guardado de datos](#proceso-guardado-de-datos)
-11. [Visualización archivos TDMS](#visualización-archivos-tdms)
-12. [Condiciones de interfaz](#condiciones-de-interfaz)
+7. [Instalación Vision Development Module](#instalacion-vision-development-module)
+8. [Consideraciones de desarrollo](#consideraciones-de-desarrollo)
+9. [Lectura de video](#lectura-de-video)
+10. [Sincronización con archivos TDMS](#sincronización-con-archivos-tdms)
+11. [Proceso guardado de datos](#proceso-guardado-de-datos)
+12. [Visualización archivos TDMS](#visualización-archivos-tdms)
+13. [Condiciones de interfaz](#condiciones-de-interfaz)
 
 ## Sistema de almacenamiento de datos de Pionero500
 
@@ -151,7 +152,10 @@ Luego de oprimir el botón Guardar dato, mostrado con el numeral 27 de la Figura
 ### Requerimientos de software VisorTDMS
 Si se desea ejecutar o modificar el código fuente de `VisorTDMS.vi`, es importante contar con lo siguiente:
 * Directorio VisorTDMS, que debe contener `_CreacionArchivos.vi` y `VisorTDMS.vi`
-* Tener instalado la plataforma de desarrollo LabVIEW, con el módulo de Vision and Motion
+* Tener instalado la plataforma de desarrollo LabVIEW, con el módulo de Vision and Motion (Vision Development Module)
+
+### Instalación Vision Development Module
+## Opción 1
 
 ### Consideraciones de desarrollo
 
