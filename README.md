@@ -44,7 +44,17 @@ Internamente cada SubVI tiene una estructura similar, donde el primer bloque def
 
 Por otra parte, los archivos `*.bin` generados por Pionero500, pueden ser transformados a archivos `*.tdms` utilizando `_LecturaLOG_Datos_TDMS.vi`, de modo que puedan ser leidos por `VisorTDMS.vi`. `_LecturaLOG_Datos_TDMS.vi` al ser ejecutado pedirá cargar un archivo `*.bin`, y en la carpeta `...\Prueba\TDMS\` (generada automáticamente si no existe) guardará el archivo `*.tdms` equivalente al `*.bin` cargado, ya sea `SubData.tdms` o `TopData.tdms`, manteniendo el mismo nombre. No obstante, si el archivo *.bin cargado no contiene datos, saldrá un mensaje de error.
 
-![image](https://user-images.githubusercontent.com/68162041/186560815-dcb27d35-a97b-467e-a7a9-1016bfbdab19.png)
+![image](https://user-images.githubusercontent.com/68162041/186699945-53385779-4449-4162-b24f-e2f0d43a0d1b.png)
+
+Para el uso normal de `_LecturaLOG_Datos_TDMS.vi` debe seguir los siguientes pasos:
+1.	Abrir `_LecturaLOG_Datos_TDMS.vi`.
+2.	Cargar un archivo en formato `*.bin` de Pionero500, correspondiente a TopData o SubData.
+3.	Espere mientras termina el proceso. Puede observar el progreso en los indicadores de la interfaz. Al terminar el programa se cierra.
+4.	Repetir el proceso desde el paso 1 las veces que se desee.
+5.	Revisar la ubicación desde la cual ejecutó `_LecturaLOG_Datos_TDMS.vi`. Allí encontrará la carpeta llamada `…\Prueba\TDMS\`, en la cual estará los archivos `*.tdms` generados.
+Consideraciones finales de _LecturaLOG_Datos_TDMS
+•	Si el archivo `*.bin` no contiene datos, saldrá un mensaje de error.
+
 
 ***
 
