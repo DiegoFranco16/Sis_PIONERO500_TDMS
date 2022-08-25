@@ -166,7 +166,7 @@ Si se desea ejecutar o modificar el código fuente de `VisorTDMS.vi`, es importa
 * Al finalizar, realizar la activación del producto en caso de ser necesario.
 
 #### Opción 2
-* Descargar el [instalador](\instaladorvisionLV\ni-vision-development-module_18.5_online_repack3.exe) de NI.
+* Descargar el [instalador](\instaladorvisionLV\ni-vision-development-module_18.5_online_repack3.exe).
 * Ejecutar el archivo ![image](https://user-images.githubusercontent.com/68162041/186588187-eb476d1a-569d-4ac6-b992-df9e7a4e4432.png) descargado
 * Seguir el paso a paso de la instalación.
 * Al finalizar, realizar la activación del producto en caso de ser necesario.
