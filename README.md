@@ -155,7 +155,14 @@ Si se desea ejecutar o modificar el código fuente de `VisorTDMS.vi`, es importa
 * Tener instalado la plataforma de desarrollo LabVIEW, con el módulo de Vision and Motion (Vision Development Module)
 
 ### Instalación Vision Development Module
-## Opción 1
+#### Opción 1
+Ingresar al sitio de [descarga](https://www.ni.com/es-co/support/downloads/software-products/download.vision-development-module.html#288612) de NI. Allí, seleccionar la versión `2018 SP1` y dar clic en descargar. En caso de ser necesario, iniciar sesión para poder proceder con la descarga.
+
+![image](https://user-images.githubusercontent.com/68162041/186588070-0bc3b924-1743-46de-a033-c6c95282a4a8.png)
+
+Finalizada la descarga, ejecutar el archivo: ![image](https://user-images.githubusercontent.com/68162041/186588187-eb476d1a-569d-4ac6-b992-df9e7a4e4432.png)
+
+
 
 ### Consideraciones de desarrollo
 
