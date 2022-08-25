@@ -38,10 +38,11 @@ Internamente cada SubVI tiene una estructura similar, donde el primer bloque def
 ![image](https://user-images.githubusercontent.com/68162041/186559873-6f661dd4-2d38-4311-8c32-2872c0b96a49.png)
 ![image](https://user-images.githubusercontent.com/68162041/186560061-afcd4efd-3b1b-4484-a335-31186759ce25.png)
 
+Por otra parte, los archivos `*.bin` generados por Pionero500, pueden ser transformados a archivos `*.tdms` utilizando `_LecturaLOG_Datos_TDMS.vi`, de modo que puedan ser leidos por `VisorTDMS.vi`. `_LecturaLOG_Datos_TDMS.vi` al ser ejecutado pedirá cargar un archivo `*.bin`, y en la carpeta `...\Prueba\TDMS\` (generada automáticamente si no existe) guardará el archivo `*.tdms` equivalente al `*.bin` cargado, ya sea `SubData.tdms` o `TopData.tdms`, manteniendo el mismo nombre.
 
+![image](https://user-images.githubusercontent.com/68162041/186560815-dcb27d35-a97b-467e-a7a9-1016bfbdab19.png)
 
-
-
+***
 
 
 ## Sistema de presentación de datos de Pionero500 VisorTDMS
