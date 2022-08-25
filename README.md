@@ -151,8 +151,9 @@ Luego de oprimir el botón Guardar dato, mostrado con el numeral 27 de la Figura
 
 ### Requerimientos de software VisorTDMS
 Si se desea ejecutar o modificar el código fuente de `VisorTDMS.vi`, es importante contar con lo siguiente:
-* Directorio VisorTDMS, que debe contener `_CreacionArchivos.vi` y `VisorTDMS.vi`
-* Tener instalado la plataforma de desarrollo LabVIEW, con el módulo de Vision and Motion (Vision Development Module)
+* Directorio VisorTDMS, que debe contener `_CreacionArchivos.vi` y `VisorTDMS.vi`.
+* Tener instalado la plataforma de desarrollo LabVIEW 2018, con el módulo de Vision and Motion (Vision Development Module).
+* Computador con sistema operativo Windows x64 bits.
 
 ### Instalación Vision Development Module
 #### Opción 1
