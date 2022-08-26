@@ -174,7 +174,7 @@ Luego de oprimir el botón Guardar dato, mostrado con el numeral 27 de la Figura
   * Tener instalado la plataforma de desarrollo LabVIEW 2018, con el módulo de Vision and Motion (Vision Development Module).
   * Computador con sistema operativo Windows x64 bits.
 
-* En caso de ser necesario, puede usar el [instalador](https://upbeduco.sharepoint.com/:f:/s/TGMDiegoFarnco/EhNx6_rBLvREq67BCB8BpGwBkexH26v9MTtBH1ipbDoJZQ?e=eaMerY) para garantizar el funcionamiento de [`VisorTDMS.exe`](https://github.com/DiegoFranco16/Sis_PIONERO500_TDMS/tree/main/builds/View_Pionero500_TDMS/VisorTDMS)(https://github.com/DiegoFranco16/Sis_PIONERO500_TDMS/tree/main/builds/Save_Pionero500_TDMS/_LecturaLOG_Datos_TDMS)
+* En caso de ser necesario, puede usar el [instalador](https://upbeduco.sharepoint.com/:f:/s/TGMDiegoFarnco/EhNx6_rBLvREq67BCB8BpGwBkexH26v9MTtBH1ipbDoJZQ?e=eaMerY) para garantizar el funcionamiento de [`VisorTDMS.exe`](https://github.com/DiegoFranco16/Sis_PIONERO500_TDMS/tree/main/builds/View_Pionero500_TDMS/VisorTDMS)
 
 ### Instalación Vision Development Module
 
