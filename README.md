@@ -52,8 +52,17 @@ Para el uso normal de `_LecturaLOG_Datos_TDMS.vi` debe seguir los siguientes pas
 3.	Espere mientras termina el proceso. Puede observar el progreso en los indicadores de la interfaz. Al terminar el programa se cierra.
 4.	Repetir el proceso desde el paso 1 las veces que se desee.
 5.	Revisar la ubicación desde la cual ejecutó `_LecturaLOG_Datos_TDMS.vi`. Allí encontrará la carpeta llamada `…\Prueba\TDMS\`, en la cual estará los archivos `*.tdms` generados.
-Consideraciones finales de _LecturaLOG_Datos_TDMS
+
+
+#### Consideraciones finales de `_LecturaLOG_Datos_TDMS`:
 •	Si el archivo `*.bin` no contiene datos, saldrá un mensaje de error.
+
+Si se desea ejecutar o modificar el código fuente de `_LecturaLOG_Datos_TDMS.vi`, es importante contar con lo siguiente:
+* Directorio [`Sis_PIONERO500_TDMS/Sis_AlmacenamientoDatos/`](https://github.com/DiegoFranco16/Sis_PIONERO500_TDMS/tree/main/Sis_AlmacenamientoDatos), que debe contener `_CreacionArchivos.vi` y `_LecturaLOG_Datos_TDMS.vi`.
+* Tener instalado la plataforma de desarrollo LabVIEW 2018.
+* Computador con sistema operativo Windows x64 bits.
+
+
 
 
 ***
