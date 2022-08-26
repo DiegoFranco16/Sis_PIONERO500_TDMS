@@ -55,14 +55,14 @@ Para el uso normal de `_LecturaLOG_Datos_TDMS.exe` debe seguir los siguientes pa
 
 
 #### Consideraciones finales de `_LecturaLOG_Datos_TDMS`:
-•	Si el archivo `*.bin` no contiene datos, saldrá un mensaje de error.
+* Si el archivo `*.bin` no contiene datos, saldrá un mensaje de error.
 
 * Si se desea ejecutar o modificar el código fuente de `_LecturaLOG_Datos_TDMS.vi`, es importante contar con lo siguiente:
   * Directorio [`Sis_PIONERO500_TDMS/Sis_AlmacenamientoDatos/`](https://github.com/DiegoFranco16/Sis_PIONERO500_TDMS/tree/main/Sis_AlmacenamientoDatos), que debe contener `_CreacionArchivos.vi` y `_LecturaLOG_Datos_TDMS.vi`.
   * Tener instalado la plataforma de desarrollo LabVIEW 2018.
   * Computador con sistema operativo Windows x64 bits.
 
-En caso de ser necesario, puede usar el [instalador](https://upbeduco.sharepoint.com/:f:/s/TGMDiegoFarnco/EqujKzL8BvZLl_UMBSwo8pMBVUY7eB3cUDcvdih78S6XUg?e=3lwQ9m) para garantizar el funcionamiento de [`_LecturaLOG_Datos_TDMS.exe`](https://github.com/DiegoFranco16/Sis_PIONERO500_TDMS/tree/main/builds/Save_Pionero500_TDMS/_LecturaLOG_Datos_TDMS)
+* En caso de ser necesario, puede usar el [instalador](https://upbeduco.sharepoint.com/:f:/s/TGMDiegoFarnco/EqujKzL8BvZLl_UMBSwo8pMBVUY7eB3cUDcvdih78S6XUg?e=3lwQ9m) para garantizar el funcionamiento de [`_LecturaLOG_Datos_TDMS.exe`](https://github.com/DiegoFranco16/Sis_PIONERO500_TDMS/tree/main/builds/Save_Pionero500_TDMS/_LecturaLOG_Datos_TDMS)
 
 ***
 
