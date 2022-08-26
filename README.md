@@ -42,16 +42,16 @@ Internamente cada SubVI tiene una estructura similar, donde el primer bloque def
 ![image](https://user-images.githubusercontent.com/68162041/186559873-6f661dd4-2d38-4311-8c32-2872c0b96a49.png)
 ![image](https://user-images.githubusercontent.com/68162041/186560061-afcd4efd-3b1b-4484-a335-31186759ce25.png)
 
-Por otra parte, los archivos `*.bin` generados por Pionero500, pueden ser transformados a archivos `*.tdms` utilizando `_LecturaLOG_Datos_TDMS.vi`, de modo que puedan ser leidos por `VisorTDMS.vi`. `_LecturaLOG_Datos_TDMS.vi` al ser ejecutado pedirá cargar un archivo `*.bin`, y en la carpeta `...\Prueba\TDMS\` (generada automáticamente si no existe) guardará el archivo `*.tdms` equivalente al `*.bin` cargado, ya sea `SubData.tdms` o `TopData.tdms`, manteniendo el mismo nombre. No obstante, si el archivo *.bin cargado no contiene datos, saldrá un mensaje de error.
+Por otra parte, los archivos `*.bin` generados por Pionero500, pueden ser transformados a archivos `*.tdms` utilizando `_LecturaLOG_Datos_TDMS.exe`, de modo que puedan ser leidos por `VisorTDMS.vi`. `_LecturaLOG_Datos_TDMS.exe` al ser ejecutado pedirá cargar un archivo `*.bin`, y en la carpeta `...\Prueba\TDMS\` (generada automáticamente si no existe) guardará el archivo `*.tdms` equivalente al `*.bin` cargado, ya sea `SubData.tdms` o `TopData.tdms`, manteniendo el mismo nombre. No obstante, si el archivo `*.bin` cargado no contiene datos, saldrá un mensaje de error.
 
 ![image](https://user-images.githubusercontent.com/68162041/186699945-53385779-4449-4162-b24f-e2f0d43a0d1b.png)
 
-Para el uso normal de `_LecturaLOG_Datos_TDMS.vi` debe seguir los siguientes pasos:
-1.	Abrir `_LecturaLOG_Datos_TDMS.vi`.
+Para el uso normal de `_LecturaLOG_Datos_TDMS.exe` debe seguir los siguientes pasos:
+1.	Abrir [`_LecturaLOG_Datos_TDMS.exe`](https://github.com/DiegoFranco16/Sis_PIONERO500_TDMS/tree/main/builds/Save_Pionero500_TDMS/_LecturaLOG_Datos_TDMS).
 2.	Cargar un archivo en formato `*.bin` de Pionero500, correspondiente a TopData o SubData.
 3.	Espere mientras termina el proceso. Puede observar el progreso en los indicadores de la interfaz. Al terminar el programa se cierra.
 4.	Repetir el proceso desde el paso 1 las veces que se desee.
-5.	Revisar la ubicación desde la cual ejecutó `_LecturaLOG_Datos_TDMS.vi`. Allí encontrará la carpeta llamada `…\Prueba\TDMS\`, en la cual estará los archivos `*.tdms` generados.
+5.	Revisar la ubicación desde la cual ejecutó `_LecturaLOG_Datos_TDMS.exe`. Allí encontrará la carpeta llamada `…\Prueba\TDMS\`, en la cual estará los archivos `*.tdms` generados.
 
 
 #### Consideraciones finales de `_LecturaLOG_Datos_TDMS`:
@@ -61,7 +61,6 @@ Si se desea ejecutar o modificar el código fuente de `_LecturaLOG_Datos_TDMS.vi
 * Directorio [`Sis_PIONERO500_TDMS/Sis_AlmacenamientoDatos/`](https://github.com/DiegoFranco16/Sis_PIONERO500_TDMS/tree/main/Sis_AlmacenamientoDatos), que debe contener `_CreacionArchivos.vi` y `_LecturaLOG_Datos_TDMS.vi`.
 * Tener instalado la plataforma de desarrollo LabVIEW 2018.
 * Computador con sistema operativo Windows x64 bits.
-
 
 
 
@@ -77,7 +76,7 @@ Si se desea ejecutar o modificar el código fuente de `_LecturaLOG_Datos_TDMS.vi
 **Figura 1.** Interfaz `VisorTDMS.vi`
 
 Para el uso normal de VisorTDMS debe seguir los siguientes pasos:
-1.	Abrir el VisorTDMS.
+1.	Abrir [`VisorTDMS.exe`](https://github.com/DiegoFranco16/Sis_PIONERO500_TDMS/tree/main/builds/View_Pionero500_TDMS/VisorTDMS).
 2.	Cargar un video en formato AVI.
 3.	Cargar el archivo correspondiente a TopData.tdms
 4.	Cargar el archivo correspondiente a SubData.tdms
@@ -85,7 +84,7 @@ Para el uso normal de VisorTDMS debe seguir los siguientes pasos:
 6.	Al observar una imagen de interés en la pantalla central y verificar que tiene datos asociados en los indicadores de la derecha (elementos 20, 21, 22, 23, 24, 25 y 26 en la Figura 2), dar clic en el botón Guardar dato.
 7.	Repetir el paso 5 y 6 las veces que lo desee.
 8.	Dar clic en el botón Exit cuando haya terminado de guardar los datos deseados.
-9.	Revisar la ubicación desde la cual ejecutó VisorTDMS. Allí encontrará la carpeta llamada *Capturas*, en la cual estará una carpeta con el nombre del video cargado. Dentro de esta carpeta encontrará todas las imágenes guardadas y un archivo de Excel con los datos de los indicadores y el nombre de la imagen guardada en cuestión.
+9.	Revisar la ubicación desde la cual ejecutó [`VisorTDMS.exe`]. Allí encontrará la carpeta llamada `\Capturas\`, en la cual estará una carpeta con el nombre del video cargado. Dentro de esta carpeta encontrará todas las imágenes guardadas y un archivo de Excel con los datos de los indicadores y el nombre de la imagen guardada en cuestión.
 10.	Cerrar el archivo de Excel del paso 9.
 11.	Repetir el proceso desde el numeral 1. Cargar el mismo video sobre escribirá el archivo de Excel visto en el paso 9.
 
